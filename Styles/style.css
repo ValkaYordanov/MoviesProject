@@ -1,0 +1,29 @@
+.flexContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.flexContainer .movieThumb {
+    padding: 10px;
+    flex: 1 0 100px;
+
+}
+
+.gridContainer {
+    display: grid;
+    grid-template-columns: .5fr 3fr .5fr;
+    grid-template-rows: auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+img,
+iframe {
+    width: 100%;
+}
+
+figure {
+    margin: 0;
+}
