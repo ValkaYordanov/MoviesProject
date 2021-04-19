@@ -12,15 +12,21 @@ let movies = [
     }
 ];
 
-
-movies.forEach(movie => {
-    document.querySelector("#movieContainer").innerHTML +=
-        `<section class="movieThumb"><img src="${movie.image}" alt="">
-        <p>${movie.title}</p>
+fetch("http://www.omdbapi.com/?i=tt3896198&apikey=5bd7e0a3")
+    .then(response => { return response.json() })
+    .then(movies => {
+        movies.forEach(movie => {
+            document.querySelector("#movieContainer").innerHTML +=
+                `<section class="movieThumb"><img src="${movie.Poster}" alt="">
+        <p>${movie.Title}</p>
 
     </section>`
 
-});
+        });
+    });
+
+
+
 
 
 
