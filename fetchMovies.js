@@ -1,12 +1,12 @@
 
 let movies = [
     {
-        "fetchUrl": "http://www.omdbapi.com/?t=The+midnight+sky",
-                "youtubeId": "https://www.youtube.com/watch?v=Gb8ZbP6qAzE"
+        "fetchUrl": "https://www.omdbapi.com/?t=The+midnight+sky",
+        "youtubeId": "https://www.youtube.com/watch?v=Gb8ZbP6qAzE"
     },
     {
-        "fetchUrl": "http://www.omdbapi.com/?t=Space+Sweepers",
-                "youtubeId": "https://www.youtube.com/watch?v=H1WYnJF1Pwo"
+        "fetchUrl": "https://www.omdbapi.com/?t=Space+Sweepers",
+        "youtubeId": "https://www.youtube.com/watch?v=H1WYnJF1Pwo"
     }
 ];
 
