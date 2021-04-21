@@ -1,7 +1,25 @@
 html {
     background-image: url(../Images/universe.jpg);
     background-repeat: no-repeat;
-    background-size: auto;
+    background-size: cover;
+    background-attachment: fixed;
+
+    color: wheat;
+    font-family: 'Zen Dots', cursive;
+    overflow-x: hidden;
+}
+
+h1 {
+    font-size: 84px;
+}
+
+a {
+    text-decoration: none;
+    color: wheat;
+}
+
+a:hover {
+    font-size: larger;
 }
 
 .flexContainer {
@@ -33,6 +51,8 @@ img {
 img,
 iframe {
     width: 100%;
+    display: block;
+    margin: 0 auto;
 }
 
 iframe {
@@ -46,10 +66,15 @@ figure {
 
 section.movieThumb {
     max-width: 425px;
+    cursor: pointer;
+}
+
+section.movieThumb:hover {
+    transform: scale(1.1);
 }
 
 @media only screen and (min-width: 450px) {
-    c {
+    section.movieThumb {
         min-width: 160px;
     }
 

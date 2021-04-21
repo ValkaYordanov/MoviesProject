@@ -27,10 +27,10 @@ fetch(`https://www.omdbapi.com/?i=${movieId}${keyUrl}`)
         // Add data to the view
         details = /*html*/ `
     <article>
-    <h2>${data.Title}</h2>
+    <h1>${data.Title}</h1>
     <figure class="embedVideo">
         <iframe id="movieUrl" frameborder="0"></iframe>
-        <figcaption>Trailer</figcaption>
+        <figcaption></figcaption>
     </figure>
     </article>
     <article>
