@@ -1,5 +1,5 @@
 
-
+console.log(movies);
 
 movies.forEach(movie => {
     fetch(`${movie.fetchUrl}${keyUrl}`)
