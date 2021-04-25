@@ -1,6 +1,7 @@
 let movieId;
-window.onload = movieId = localStorage.getItem("movieId");
+window.onload = movieId = localStorage.getItem("movieId"); // Add the id from the local storage and assign it to a variable
 
+// Turn the youtube trailer link into an embedded link
 let youtube = {
     getIdFromUrl: function (videoIdOrUrl) {
         if (videoIdOrUrl.indexOf('http') === 0) {
@@ -18,7 +19,7 @@ let youtube = {
 
 
 let details;
-fetch(`https://www.omdbapi.com/?i=${movieId}${keyUrl}`)
+fetch(`https://www.omdbapi.com/?i=${movieId}${keyUrl}`) // Get the movie data
     .then(response => { return response.json() })
     .then(data => {
 
@@ -46,7 +47,7 @@ fetch(`https://www.omdbapi.com/?i=${movieId}${keyUrl}`)
     </article>
     <article class="arrows"></article>
     `;
-        document.querySelector('main').innerHTML = details;
+        document.querySelector('main').innerHTML = details; // Add information to the html
 
 
         // Check for youtube link
@@ -54,8 +55,8 @@ fetch(`https://www.omdbapi.com/?i=${movieId}${keyUrl}`)
             fetch(`${movie.fetchUrl}${keyUrl}`)
                 .then(allMovies => { return allMovies.json() })
                 .then(movieData => {
-                    if (movieData.imdbID == movieId) {
-                        document.querySelector('#movieUrl').src = youtube.generateEmbedUrl(movie.youtubeId);
+                    if (movieData.imdbID == movieId) { // If matches
+                        document.querySelector('#movieUrl').src = youtube.generateEmbedUrl(movie.youtubeId); // Then add the correct src
                     }
                 })
 

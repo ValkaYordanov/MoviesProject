@@ -1,4 +1,6 @@
+//------------------------------ General data ---------------------------------------
 
+// Providing the data for each movie from an AIP and a link to a youtube trailer
 let movies = [
     {
         "fetchUrl": "https://www.omdbapi.com/?t=The+midnight+sky",
@@ -34,6 +36,7 @@ let movies = [
     }
 ];
 
-let apiKey = "273154c1";
-let keyUrl = `&apikey=${apiKey}`
+
+let apiKey = "273154c1"; // The apiKey to get access to the data from the api
+let keyUrl = `&apikey=${apiKey}` //apiky path in the url
 
